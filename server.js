@@ -2,6 +2,8 @@ const express = require ("express");
 const app = express();
 const dotenv = require("dotenv")
 const morgan = require("morgan")
+const bodyparser = require("body-parser")
+const path = require("path")
 
 
 dotenv.config({path: './views/config.env'})
@@ -11,6 +13,14 @@ const PORT = process.env.PORT;
 // log req
 
 app.use(morgan('tiny'))
+// parse req to bodyparser
+
+app.use(bodyparser.urlencoded({extended: true}))
+
+// view engine
+
+app.set("view engine", "ejs")
+// app.set("views", path.resolve(__dirname,"views/ejs"))
 
 app.get("/", (req, res)=>{
     res.send("welcome to local sever")
