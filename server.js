@@ -1,7 +1,11 @@
 const express = require ("express");
 const app = express();
+const dotenv = require("dotenv")
 
-const PORT = process.env.PORT|| 8080;
+
+dotenv.config({path: './views/config.env'})
+
+const PORT = process.env.PORT;
 
 app.get("/", (req, res)=>{
     res.send("welcome to local sever")
