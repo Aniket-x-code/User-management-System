@@ -27,7 +27,7 @@ app.set("view engine", "ejs")
 app.use('/css', express.static(path.resolve(__dirname,"assets/css")))
 
 app.get("/", (req, res)=>{
-    res.send("welcome to local sever")
+    res.send("welcome to local sever up")
 })
 
 
