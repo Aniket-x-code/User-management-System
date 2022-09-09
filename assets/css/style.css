@@ -1,9 +1,8 @@
 
 body
 {
-    background: rgb(164,12,235);
-    background: linear-gradient(90deg, rgba(164,12,235,1) 0%, rgba(231,15,59,1) 100%);
-    color: white ;
+    background-image: linear-gradient(to right, #8e0fd0, #c600a6, #e1007c, #ea0057, #e53838);
+    color: white;
 }
 a{
     color: white;
