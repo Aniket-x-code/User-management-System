@@ -3,7 +3,9 @@ body
 {
     background-image: linear-gradient(to right, #8e0fd0, #c600a6, #e1007c, #ea0057, #e53838);
     color: white;
+    font-family: 'Catamaran', sans-serif;
 }
 a{
     color: white;
+    text-decoration: none;
 }

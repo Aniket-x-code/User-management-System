@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>User Management</title>
 </head>
 <body>
@@ -29,10 +31,39 @@
                 <span class="text-gradient">New User <i class="lni lni-users"></i></span>
             </a>
         </div>
-    </div>
+   
 
-<!-- form handling -->
-<form action="/" method="post"></form>
+        <!-- form handling -->
+            <form action="/" method="post">
+            <table class="table">
+                    <thread class="thread-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>@Email</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thread>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Username</td>
+                            <td>example@gmail.com</td>
+                            <td>Male</td>
+                            <td>Active</td>
+                            <td>
+                                <a href="#" class="btn border shadow update">
+                                    <span class="text-gradient"><i class="lni lni-pencil-alt"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+            </form>
+
+    </div>
 
 </main>
 </body>
