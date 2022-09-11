@@ -1,9 +1,10 @@
-<tr>
-    <td>1</td>
-    <td>Username</td>
-    <td>example@gmail.com</td>
-    <td>Male</td>
-    <td>Active</td>
+<% for(var i=0;i<users.length; i++){%>
+
+    <td><%= i + 1 %></td>
+    <td><%= users[i].name %></td>
+    <td><%= users[i].email %></td>
+    <td><%= users[i].gender %></td>
+    <td><%= users[i].status %></td>
     <td>
         <a href="/update-user" class="btn border shadow update">
             <span class="text-gradientt"><i class="lni lni-pencil-alt"></i></span>
@@ -13,3 +14,4 @@
         </a>
     </td>
 </tr>
+<%}%>
