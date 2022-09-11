@@ -126,7 +126,7 @@ table
     color: white;
     background-color: #072656;
     border-color: #32383e;
-    height: 2.2em;
+    height: 2.1em;
 }
 @media only screen and (max-width: 1024px){
     table, thead, tbody, th, td, tr{
