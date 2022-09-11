@@ -4,17 +4,11 @@ const services = require("../services/render")
 
 
 
-route.get("/", (req, res)=>{
-    res.render('index');
-})
+route.get("/", services.homeRoute)
 
-route.get("/add-user", (req, res)=>{
-    res.render('add_user');
-})
+route.get("/add-user", services.add_user)
 
 
-route.get("/update-user", (req, res)=>{
-    res.render('update_user');
-})
+route.get("/update-user", services.update_user)
 
 module.exports=route;
