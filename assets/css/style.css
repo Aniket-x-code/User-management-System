@@ -5,11 +5,13 @@
 }
 
 body
-{
+{   background: black;
     /* background-image: linear-gradient(to right, #8e0fd0, #c600a6, #e1007c, #ea0057, #e53838); */
-    background-image: linear-gradient(to right, #072656, #042b76, #202c93, #4427ae, #6c0ec5);
+    /* background-image: linear-gradient(to right, #072656, #042b76, #202c93, #4427ae, #6c0ec5); */
     color: white;
     font-family: 'Catamaran', sans-serif;
+    background-image: url(https://i.pinimg.com/originals/c2/17/97/c21797d71219c76af149e465f9d5281d.gif);
+    
 }
 a{
     color: white;
